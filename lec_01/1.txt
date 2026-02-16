@@ -1,0 +1,39 @@
+### Why JAVA
+
+Problem of C/C++:
+    1. Portability:
+            ---> c/c++ are platform dependent language. you need to recomplie that C/C++ code for that platform, you can use that.
+            ---> you cann't just use that complied code in other platform. that complied code may not bo run in that platform.
+            ---> For C/C++ complier will generate different binary code for different platform.
+            (Q) What is platform? : (Processor + OS)
+            (Q) How different OS create different binary ?
+                ---> different have different system libraries to convert instruction to binary (Mac can have different system calls, Windows can have different system calls)
+            (Q) How different Processor create different binary?
+                ---> between Program and Processor, we have ISA (Instruction Set Architecture) which convert program into small instructions (like, ADD STORE LOAD JUMP).
+                ---> and different processors have different ISA.
+    2. Simplicity:
+            1. pointers
+            2. Multiple Interitances
+            3. Manual memory allocations / deallocations.
+    3. Security:
+
+
+Feature of JAVA: (how JAVA solve this problem?)
+    1. Portable (WORA: write ones, run anywhere)
+            using (BYTECODE):
+            ---> first we need to install JVM (java virtual Machine) inside the Platforms. Java Complier we complie JAVA code into BYTECODE. and that BYTECODE will convert into the binary using JVM.
+            ---> But JVM are platform dependent.
+    2. Simple
+            JAVA removes :
+                    1. pointers
+                    2. Multiple Interitances
+                    3. Manual memory allocations / deallocations.
+    3. Secure
+            JVM provides a Secure Env. for BYTECODE to run. (Sandbox model)
+
+
+
+
+### Can C/C++ be Platform Independent ?
+    ---> Yes It can 
+    ---> for that Micrsoft created C# (mix of C/C++ and JAVA's Bytecode concept)
