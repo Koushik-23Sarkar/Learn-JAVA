@@ -1,0 +1,52 @@
+###  JVM        JRE         JDK
+
+BYTECODE: is platform independent, we just need JVM to run that code.
+
+----------------|
+JDK             |
+-------------   |
+JRE         |   |
+--------    |   |
+JVM     |   |   |   
+--------    |   |
+-------------   |
+----------------|
+
+
+    1. complier: Take Source Code, read Source all at once, convert into Machine Code.
+    2. Interpreter: Take Source Code, but don't read all Source Code in once, it reads each line one by one, convert into Machine Code.
+
+### How JVM convert into Machine code ?
+    (Old version)JAVA is both (complied + Interpreted) language. JAVA needs complier to create BYTECODE. JVM use Interpreter to convert BYTECODE into Machine Code.
+    (New Version) we add JIT complier with Interpreter in JVM. (JIT complier + Interpreter)
+
+    JVM takes BYTECODE and check which is frequently used code. JVM convert that frequently used Code into Machine Code using JIT complier. and convert less frequently used code into Machine Code using Interpreter.
+
+
+### JVM:    
+        1. Convert BYTECODE to Machine Code. (JIT complier + Interpreter)
+        2. Security (Sand-BOX model)
+        3. Garbage Collection
+
+
+
+
+JRE : JVM + Class Libraries (kind of like internal function we need)
+
+JDK : (Java Development Kit) : Complete package to run JAVA Source code.
+    JRE + Complier + Debugger + JavaDocs...
+
+
+JSE: JAVA Standard Edition (Core JAVA)
+JEE: JAVA Enterprise Edition (to create WebApp) (Jakarta EE)
+JME: JAVA Micro Edition (lightweight edition) (replaced by Android)
+
+
+
+
+
+
+
+
+demo.java -------------> Complier -------> demo.class ------> JRE ---------> Machine code -------> CPU --------> O/P 
+                    javac demo.java                         java demo 
