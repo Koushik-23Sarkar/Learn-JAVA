@@ -1,0 +1,33 @@
+varibles: container
+
+Identifiers: name of that container.
+Literals: value store inside that container.
+Staticaly typed: before create any varibles we need to define types of that varibles.
+
+#### Datatypes in JAVA:
+    Primitive: 
+        Integer: byte, short, int, long
+        Real no.: float, double
+        Character: char
+        Boolean: boolean
+    Non-Primitive:
+
+---> every no. is signed in JAVA.
+#### Range of Integers:
+    byte: 8
+    short: 16 
+    int: 32
+    long: 64
+#### Range of Real no.:
+    float: 32 (single precision)
+    double: 64 (double precision) // good for calculation
+
+#### Range of Character: 
+    char: (16bits) to represent "unicodes" not ASCII
+
+    unicodes: gives every charcter of world language to a Number.
+    this Number is converted into binary number and store in the memory.
+    that binary is represent a number or a character using Datatypes. 
+
+#### Range of Boolean: 
+    true / false
