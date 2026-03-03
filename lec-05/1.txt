@@ -1,0 +1,26 @@
+### Type Conversion in JAVA
+
+# Type Conversion Rules;
+    1. Implicit
+        ---> Destination Data type should be higher size then source data type.
+        ---> JAVA can automatically do this.
+    2. Explicit
+        ---> Destination Data type should be smaller size then source data type.
+        ---> using "casting". (<data_type>)
+        ---> Value of Smaller = ( Value of higher ) % (range of that <data_type>)
+        ---> also known as "Narrowing Conversion".
+    3. Truncating Conversion;
+        ---> when we change any "Float"/"Double" value into "Int".
+        ---> ignore decimal value. take Integar value.
+
+
+# Boolean to any data type, conversion is not possible in JAVA
+
+__________________________________________________________________________________________________________________________________________________
+### Automatic type promotion
+    ---> JAVA automatically promotes varibales to it's higher size data_type, if it needs for calculation.
+### Rules of type promotion;
+    1. byte, short and char value are promoted to INT.
+    2. If one operand is LONG, the whole expression will become LONG.
+    3. If one operand is FLOAT, the entire expression will become FLOAT.
+    4. If one operand is DOUBLE, the whole expression will become DOUBLE.
